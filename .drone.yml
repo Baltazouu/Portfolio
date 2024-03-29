@@ -22,7 +22,7 @@ steps:
        context: .
        registry: hub.codefirst.iut.uca.fr
        mirror: https://proxy.iut.uca.fr:8443
-       repo: hub.codefirst.iut.uca.fr/baptiste.dudonne/Portfolio
+       repo: hub.codefirst.iut.uca.fr/baptiste.dudonne/portfolio
        username:
          from_secret: SECRET_REGISTRY_USERNAME
        password:
@@ -32,6 +32,6 @@ steps:
     image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
     environment:
         IMAGENAME: hub.codefirst.iut.uca.fr/baptiste.dudonne/portfolio:latest
-        CONTAINERNAME: Portfolio
+        CONTAINERNAME: portfolio
         COMMAND: create
         OVERWRITE: true
