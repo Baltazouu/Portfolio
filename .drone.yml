@@ -31,7 +31,7 @@ steps:
   - name: deploy-container
     image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
     environment:
-        IMAGENAME: hub.codefirst.iut.uca.fr/baptiste.dudonne/Portfolio:latest
+        IMAGENAME: hub.codefirst.iut.uca.fr/baptiste.dudonne/portfolio:latest
         CONTAINERNAME: Portfolio
         COMMAND: create
         OVERWRITE: true
