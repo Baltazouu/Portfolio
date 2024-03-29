@@ -35,4 +35,3 @@ steps:
         CONTAINERNAME: portfolio
         COMMAND: create
         OVERWRITE: true
-
