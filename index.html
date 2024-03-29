@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-  <title>Portfolio - One incredible styled html page</title>
+  <title>Portfolio - Baptiste Dudonné</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/slider.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -34,8 +37,8 @@
     <div class="collapse navbar-collapse" id="ftco-nav">
       <ul class="navbar-nav nav ml-auto">
         <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>à propos de moi</span></a></li>
-        <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>mes projets</span></a></li>
-        <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>CV</span></a></li>
+        <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>mes projets</span></a></li>
+        <li class="nav-item"><a href="documents/CV_Dudonne_Baptiste.pdf" target="_blank" class="nav-link"><span>CV</span></a></li>
       </ul>
     </div>
   </div>
@@ -52,12 +55,11 @@
           </div>
           <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <div class="text">
-              <span class="subheading">Hello!</span>
-              <h1 class="mb-4 mt-3">Je suis <span>Baptiste Dudonné</span></h1>
+              <h1 class="mb-4 mt-3"><span>Baptiste Dudonné</span></h1>
               <h2 class="mb-4">Étudiant alternant développeur</h2>
               <p>
                 <a href="#about-section" class="btn btn-primary py-3 px-4">à propos de moi</a>
-                <a href="#" class="btn btn-white btn-outline-white py-3 px-4">mes projets</a>
+                <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">mes projets</a>
               </p>
             </div>
           </div>
@@ -87,7 +89,7 @@
             <ul class="about-info mt-4 px-md-0 px-2">
               <li class="d-flex"><span>Baptiste Dudonné</span></li>
               <li class="d-flex"><span>Date de naissance :</span> <span>24/03/2004</span></li>
-              <li class="d-flex"><span>Adresse :</span> <span>Clermont-Ferrand, France</span></li>
+              <li class="d-flex"><span>Localisation :</span> <span>Clermont-Ferrand, France</span></li>
               <li class="d-flex"><span>Email :</span> <span><a href="mailto:baptiste.dudonne@etu.uca.fr">baptiste.dudonne@etu.uca.fr</a></span></li>
               <li class="d-flex"><span>Linkedin :</span> <span><a href="https://fr.linkedin.com/in/baptiste-dudonn%C3%A9-68852926b" target="_blank">Baptiste Dudonné</a></span></li>
               <li class="d-flex"><span>Github :</span> <span><a href="https://github.com/Baltazouu" target="_blank">Baltazouu</a></span></li>
@@ -95,12 +97,74 @@
           </div>
         </div>
         <div class="counter-wrap ftco-animate d-flex mt-md-3">
-            <p><a href="documents/CV_Dudonne_Baptiste.pdf" class="btn btn-primary py-3 px-3">Téléchargez mon CV</a></p>
-          </div>
+            <p><a href="documents/CV_Dudonne_Baptiste.pdf" class="btn btn-primary py-3 px-3" target="_blank">Voir mon CV</a></p>
+            <p><a href="#projects-section" class="btn btn-primary py-3 px-3">Voir mes projets</a></p>
+        </div>
         </div>
       </div>
     </div>
-  </div>
+  <section>
+
+<section id="projects-section" class="hero">
+
+  <section class="ftco-section ftco-no-pb" id="projects-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Mes Projets</h1>
+          <h2 class="mb-4">Mes Projets</h2>
+          <p>Voici la liste de mes principaux projets réalisés durant mes études où au niveau personnel dans le but d'aqcuérir de nouvelles compétences</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2023-2024</span>
+            <h2>Réseau social Alica</h2>
+            <span class="position">IUT Clermont-Auvergne</span>
+            <p class="mt-4">
+              Réalisation d'un réseau social <strong>Alumni</strong> pour les anciens étudiants de l'IUT Clermont-Auvergne
+              Développement d'une platerforme web React.js d'un client mobile et d'une API REST
+            </p>
+            <div class="technos">
+              <img src="images/logos.png" alt="technologies utilisées" class="logo">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+
+            <div class="slider" style="height: 400px">
+              <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+              <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+              <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+              <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+              <div class="slider__inner">
+                <div class="slider__contents">
+                  <h2 class="slider__caption">Alica WEB - Page d'accueil</h2>
+                  <img src="images/alica_main_page.png" alt="page d'accueil Alica WEB"  class="slider_image">
+                </div>
+                <div class="slider__contents">
+                  <h2 class="slider__caption">Alica WEB - Offres d'emploi</h2>
+                  <img src="images/alica_offers.png" alt="Offres Alica WEB" class="slider_image">
+                </div>
+                <div class="slider__contents">
+                  <h2 class="slider__caption">Alica Mobile - inscription</h2>
+                  <img src="images/alica_mobile_signup.png" alt="Page d'inscription Alica Mobile" class="slider_image">
+                </div>
+                <div class="slider__contents">
+                  <h2 class="slider__caption">Alica Mobile - Experiences</h2>
+                  <img src="images/alica_mobile_experiences.png" alt="experiences Alica Mobile" class="slider_image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 </section>
 
 
@@ -118,7 +182,6 @@
 <script src="js/scrollax.min.js"></script>
 
 <script src="js/main.js"></script>
-
 
 </body>
 </html>
